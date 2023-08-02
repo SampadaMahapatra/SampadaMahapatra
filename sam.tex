@@ -6,42 +6,39 @@
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
 %\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 \let\vec\mathbf
-\title{Ch - 3 linear equations in two variables}
+\title{Ch - 7 Coordinate geometry}
 \author{Mahapatra Sampada(mahapatra.sampada@sriprakashschools.com)}
-\date{July 2023}
+\date{1 August 2023}
 \begin{document}
 \maketitle
-\section*{Class10${th}$ Maths- chapter 3}
-This is problem 5 of exercise 3.2
+\section*{Class10${th}$ Maths- chapter 7}
+This is problem 3 of exercise 7.3
 \begin{enumerate}
-\item Half the perimeter of a rectangular garden whose length is 4m more than its width, is 36m.Find the dimensions of the garden.\\
+\item Find the area of a triangle formed by joining the mid points of the sides of the triangle whose vertices are (0,-1) , (2,1) and (0,3). Find the ratio of this area to the area of the given triangle. \\
 
 \solution\\
-Length = y\\
-Width = x\\
-Also length = 4+x \\
-Half perimeter of rectangle = l+b\\
-Therefore the equations can be written as :
+Let the points be A(0,-1) , B(2,1) , C (0,3)\\ 
+Hence the points are :\\
+D = (1,0)\\
+E = (1,2)\\
+F = (0,1)\\
+    Area of triangle = \begin{align}
+    [\frac{1}{2}]\lvert x_1(y_2 - y_3)+x_2(y_3 - y_1)+x_3(y_1 - y_2)\rvert
+\end{align}\\
+From this formula, area of triangle ABC=
 \begin{align}
-x+y=36\\
-x-y=-4\\
-\end{align}
-\begin{align}
-x =\frac{\mydet{ \vec{b} & \vec{a_2}}}{\mydet{ \vec{a_1} &\vec{a_2} }}\\
-\end{align}
-\begin{align}   
-    y = \frac{\mydet{ \vec{b} & \vec{a_1}}}{\mydet{ \vec{a_1} &\vec{a_2} }}\\
-\end{align} 
+ [\frac{1}{2}] \lvert  0(1-3)+ 2(3+1)+ 0(-1-1)\rvert\\
+ \end{align}
  \begin{align}
-x =  \frac{\mydet{ 36 & 1 \\ -4 & -1 }}{\mydet{1&1\\1&-1}} =&
-\frac{(36)(-1)-(-4)(1)}{(1)(-1)-(1)(1)} =&
-16\\
-and\\  y = \frac{\mydet{ 36 & 1 \\ -4 & 1}}{\mydet{1&1\\1&-1}} =&
-\frac{(36)(-1)-(-4)(1)}{(1)(-1)-(1)(1)} =&
-20\\
+ = 4 sq.units
+ \end{align}
+Likewise, the area of the triangle DEF= 
+\begin{align}
+[\frac{1}{2}] \lvert  1(2-1)+ 1(1-0)+ 0(0-2)\rvert\\
 \end{align}
-Hence, the dimensions of the rectangular garden are\\
-length = 20m\\
-width = 16m
+\begin{align}
+ = 1 sq.unit
+ \end{align}
+ Therefore, the ratio between the triangle DEF and ABC = 1:4 
 \end{enumerate}
 \end{document}
