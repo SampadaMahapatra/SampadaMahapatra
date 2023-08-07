@@ -1,0 +1,20 @@
+import numpy as np
+A=np.array([0,-1])
+B=np.array([2,1])
+C=np.array([0,3])
+
+AB= B-A
+BC=C-B
+
+K = (0.5)*np.cross(AB,BC)
+print("area of outer triangle:",K)
+D=np.array([1,0])
+E=np.array([1,2])
+F=np.array([0,1])
+
+DE=E-D
+EF=F-E
+
+L = (0.5)*np.cross(DE,EF)
+print(" Area of inner triangle:",L)
+print("The ratio of two triangle = 1:4")
